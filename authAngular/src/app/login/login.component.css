@@ -1,0 +1,19 @@
+.container{
+    width: 350px;
+height: 300px;
+padding: 25px;
+background-color: #ffffff;
+top: 50%;
+left: 50%;
+position: absolute;
+margin-left: -175px;
+margin-top: -175px;
+border: 14px;
+border-style: inset;
+border-color: chocolate;
+
+}
+#disabled {
+    text-decoration-color: black;
+    text-decoration-style: solid;
+}
