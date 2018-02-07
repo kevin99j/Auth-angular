@@ -1,12 +1,12 @@
-<div class="container">
-  <div class="row">
-  <div class="input-field col s6">
-    <input id="last_name" type="text" class="validate"[(ngModel)]="user">
-    <label for="last_name">Usuario</label>
-  </div> 
-      <div class="input-field col s6">
-        <input disabled value="@unab.edu.co" id="disabled" type="text" class="validate">
-      </div>
+<div class="container" *ngIf="visible">
+    <div class="row">
+        <div class="input-field col s6">
+            <input id="email" type="text" class="validate">
+            <label for="email">Email</label>
+          </div> <div class="input-field col s6">
+              <input disabled value="@unab.edu.co" id="disabled" type="text" class="validate">
+          
+            </div>
     </div>
   <div class="input-field col s12">
     <input id="password" type="password" class="validate" [(ngModel)]="password">
@@ -16,4 +16,9 @@
   <i class="material-icons right">send</i>
 </button>
 <h3>{{user}}</h3>
+</div>
+
+<div *ngIf="container">
+  <h1>Welcome</h1>
+  <router-outlet></router-outlet>
 </div>

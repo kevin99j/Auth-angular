@@ -14,6 +14,7 @@ border-color: chocolate;
 
 }
 #disabled {
-    text-decoration-color: black;
+    font-style: normal;
     text-decoration-style: solid;
+    text-decoration-color: black;
 }
